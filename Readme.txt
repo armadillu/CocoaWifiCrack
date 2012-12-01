@@ -1,4 +1,4 @@
-will try out all the words in the supplied wordlist to try joint the user specified wifi network.
+will try out all the words in the supplied wordlist to try join the user specified wifi network.
 
 usage: CocoaWifiCrack interface ssid wordlist
 example: CocoaWifiCrack en1 myWifiNetwork myWordlist.txt
