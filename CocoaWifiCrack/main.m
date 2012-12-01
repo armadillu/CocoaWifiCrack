@@ -59,11 +59,17 @@ int main(int argc, char *argv[]){
 			FileReader* fileReader = [[FileReader alloc] initWithFilePath:dictPath];
 
 			NSString * password = [fileReader readLine];
-			password = [password stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+			if (password == nil){
+				NSLog(@"Wordlist file (%@) is empty or non existant!", dictPath);
+			}
 
+			NSAutoreleasePool * pool2 = [[NSAutoreleasePool alloc] init];
+
+			long c = 0;
 			while( password != nil ){
 
-				NSAutoreleasePool * pool2 = [[NSAutoreleasePool alloc] init];
+				password = [password stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+
 				NSDate *start = [NSDate date];
 				BOOL didAssociate = [wifiInterface associateToNetwork: network password:password error:&err];
 				NSTimeInterval timeInterval = fabs([start timeIntervalSinceNow]);
@@ -71,14 +77,19 @@ int main(int argc, char *argv[]){
 
 				if (!didAssociate){
 					NSLog(@"spent %.2f seconds testing password %@\"%@\"%@", timeInterval, RED, password, BLACK);
+					if (err!= nil) NSLog(@"err: %@", [err userInfo]);
 				}else{
 					NSLog(@">>> Associated to \"%@\" on \"%@\" with password %@\"%@\"%@ <<<", ssid, interface, GREEN, password, BLACK );
 					break;
 				}
 
 				password = [fileReader readLine]; //get next password
-				password = [password stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-				[pool2 release];
+
+				c++;
+				if (c%1000 == 1){
+					[pool2 release];
+					pool2 = [[NSAutoreleasePool alloc] init];
+				}
 			}
 
 		}else{
