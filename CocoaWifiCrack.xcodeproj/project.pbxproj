@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB528EC7166A7A5400271A1D /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB528EC6166A7A5400271A1D /* CoreWLAN.framework */; };
+		BB528ED1166A7E6000271A1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB528EB4166A798D00271A1D /* main.m */; };
+		BB528ED2166A7E6200271A1D /* FileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BB528EB3166A798D00271A1D /* FileReader.m */; };
+		BB528ED3166A7E6300271A1D /* NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB528EB6166A798D00271A1D /* NSDataExtensions.m */; };
+		BB528ED6166A7E8600271A1D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB528ED5166A7E8600271A1D /* Quartz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0FF9041649905200418526 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB0FF9061649905200418526 /* CocoaPdfCrack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = CocoaPdfCrack; path = CocoaWifiCrack; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB528EB2166A798D00271A1D /* FileReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileReader.h; sourceTree = "<group>"; };
+		BB528EB3166A798D00271A1D /* FileReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileReader.m; sourceTree = "<group>"; };
+		BB528EB4166A798D00271A1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB528EB5166A798D00271A1D /* NSDataExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDataExtensions.h; sourceTree = "<group>"; };
+		BB528EB6166A798D00271A1D /* NSDataExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDataExtensions.m; sourceTree = "<group>"; };
+		BB528EC6166A7A5400271A1D /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		BB528ED5166A7E8600271A1D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0FF9031649905200418526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB528ED6166A7E8600271A1D /* Quartz.framework in Frameworks */,
+				BB528EC7166A7A5400271A1D /* CoreWLAN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0FF8FB1649905200418526 = {
+			isa = PBXGroup;
+			children = (
+				BB528ED5166A7E8600271A1D /* Quartz.framework */,
+				BB528EC6166A7A5400271A1D /* CoreWLAN.framework */,
+				BB528EB1166A798D00271A1D /* CocoaWifiCrack */,
+				BB0FF9071649905200418526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0FF9071649905200418526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0FF9061649905200418526 /* CocoaPdfCrack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB528EB1166A798D00271A1D /* CocoaWifiCrack */ = {
+			isa = PBXGroup;
+			children = (
+				BB528EB2166A798D00271A1D /* FileReader.h */,
+				BB528EB3166A798D00271A1D /* FileReader.m */,
+				BB528EB4166A798D00271A1D /* main.m */,
+				BB528EB5166A798D00271A1D /* NSDataExtensions.h */,
+				BB528EB6166A798D00271A1D /* NSDataExtensions.m */,
+			);
+			path = CocoaWifiCrack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0FF9051649905200418526 /* CocoaWifiCrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0FF9101649905200418526 /* Build configuration list for PBXNativeTarget "CocoaWifiCrack" */;
+			buildPhases = (
+				BB0FF9021649905200418526 /* Sources */,
+				BB0FF9031649905200418526 /* Frameworks */,
+				BB0FF9041649905200418526 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaWifiCrack;
+			productName = CocoaPdfCrack;
+			productReference = BB0FF9061649905200418526 /* CocoaPdfCrack */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0FF8FD1649905200418526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Oriol Ferrer Mesià";
+			};
+			buildConfigurationList = BB0FF9001649905200418526 /* Build configuration list for PBXProject "CocoaWifiCrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB0FF8FB1649905200418526;
+			productRefGroup = BB0FF9071649905200418526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0FF9051649905200418526 /* CocoaWifiCrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0FF9021649905200418526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB528ED1166A7E6000271A1D /* main.m in Sources */,
+				BB528ED2166A7E6200271A1D /* FileReader.m in Sources */,
+				BB528ED3166A7E6300271A1D /* NSDataExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB0FF90E1649905200418526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB0FF90F1649905200418526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB0FF9111649905200418526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB0FF9121649905200418526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0FF9001649905200418526 /* Build configuration list for PBXProject "CocoaWifiCrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0FF90E1649905200418526 /* Debug */,
+				BB0FF90F1649905200418526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0FF9101649905200418526 /* Build configuration list for PBXNativeTarget "CocoaWifiCrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0FF9111649905200418526 /* Debug */,
+				BB0FF9121649905200418526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0FF8FD1649905200418526 /* Project object */;
+}
