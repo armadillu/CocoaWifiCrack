@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <CoreWLAN/CoreWLAN.h>
-#import "PDFBruteForce.h"
+#import "FileReader.h"
 
 #define BLACK @"\e[0m"
 #define RED @"\e[1;31m"
